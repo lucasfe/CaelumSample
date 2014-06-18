@@ -18,7 +18,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+
     }
     return self;
 }
@@ -49,5 +49,23 @@
 - (IBAction)doSum:(id)sender {
     self.resultLabel.text =   @(self.sumText1.text.integerValue + self.sumText2.text.integerValue).stringValue;
     self.resultLabel.textAlignment = NSTextAlignmentCenter;
+}
+
+- (IBAction)sliderChanged:(id)sender {
+    
+    UISlider * slider = (UISlider*) sender;
+    
+    float value = slider.value;
+    
+    NSString *strValue = [NSString stringWithFormat:@"%f", value];
+    
+    if(slider == self.slider1) {
+        self.sumText1.text = strValue;
+    }
+    else {
+        self.sumText2.text = strValue;
+    }
+    
+    
 }
 @end
