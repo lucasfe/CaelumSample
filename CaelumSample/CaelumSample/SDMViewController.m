@@ -26,6 +26,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)getBack:(UIStoryboardSegue*) segue {
+    NSLog(@"Voltou");
+}
+
 - (IBAction)changeText:(id)sender {
     
     self.titleLabel.text = self.titleText.text;

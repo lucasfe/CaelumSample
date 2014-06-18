@@ -59,7 +59,7 @@
     
     NSString *strValue = [NSString stringWithFormat:@"%f", value];
     
-    if(slider == self.slider1) {
+    if(slider.tag == 0) {
         self.sumText1.text = strValue;
     }
     else {

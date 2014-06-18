@@ -17,8 +17,6 @@
 
 
 @property (weak, nonatomic) IBOutlet UISlider *slider2Changed;
-@property (weak, nonatomic) IBOutlet UISlider *slider1;
-@property (weak, nonatomic) IBOutlet UISlider *slider2;
 
 
 @end
